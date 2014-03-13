@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
-
+	<?php include('lang/lang.php'); ?>
     <title>Signin Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
@@ -26,10 +26,10 @@
     <div class="container">
 
       <form class="form-signin" role="form" action="login_process.php" method="post">
-        <h2 class="form-signin-heading">Veuillez vous identifier</h2>
-        <input  type="username" name="username" class="form-control" placeholder="Nom d'usager" required="" autofocus="">
-        <input  type="password" name="password" class="form-control" placeholder="Mot de passe" required="">
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Se connecter</button>
+        <h2 class="form-signin-heading"><?php echo lang('SIGNIN_TITLE'); ?></h2>
+        <input  type="username" name="username" class="form-control" placeholder="<?php echo lang('SIGNIN_USERNAME'); ?>" required="" autofocus="">
+        <input  type="password" name="password" class="form-control" placeholder="<?php echo lang('SIGNIN_PASSWORD'); ?>" required="">
+        <button class="btn btn-lg btn-primary btn-block" type="submit"><?php echo lang('SIGNIN_CONNECTION'); ?></button>
       </form>
 
     </div> <!-- /container -->
