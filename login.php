@@ -25,14 +25,11 @@
 
     <div class="container">
 
-      <form class="form-signin" role="form">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <input type="email" class="form-control" placeholder="Email address" required="" autofocus="">
-        <input type="password" class="form-control" placeholder="Password" required="">
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <form class="form-signin" role="form" action="login_process.php" method="post">
+        <h2 class="form-signin-heading">Veuillez vous identifier</h2>
+        <input  type="username" name="username" class="form-control" placeholder="Nom d'usager" required="" autofocus="">
+        <input  type="password" name="password" class="form-control" placeholder="Mot de passe" required="">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Se connecter</button>
       </form>
 
     </div> <!-- /container -->
